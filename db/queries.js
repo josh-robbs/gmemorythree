@@ -15,8 +15,8 @@ module.exports = {
     },
     update(id, game){
         return database('game')
-            .update('game')
-            .where('id', id)
+            .update(game)
+            .where('id',id)
             .returning('*')
             .then(record => record[0])
     },

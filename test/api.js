@@ -1,7 +1,7 @@
 const {assert} = require("chai");
 const request = require("supertest");
 const app = require("../app");
-const knex = require("../database-connection");
+const knex = require("../db/database-connection");
 
 describe("API requests", () => {
     beforeEach(done => {
